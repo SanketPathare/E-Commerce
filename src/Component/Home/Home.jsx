@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 import "../Home/Home.css";
 import { BiRightArrowAlt } from "react-icons/bi";
-import   home_img  from "../../img/home2.png"
-import phone from "../../img/phone.png"
-import watch from "../../img/watch.png"
-import headset from "../../img/headsets.png"
-import laptop from "../../img/laptop.png"
+import home_img from "../../img/home2.png";
+import phone from "../../img/phone.png";
+import watch from "../../img/watch.png";
+import headset from "../../img/headsets.png";
+import laptop from "../../img/laptop.png";
+import { FiTruck } from "react-icons/fi";
+import { FaRupeeSign } from "react-icons/fa";
+import { CiPercent } from "react-icons/ci";
+
+import { FaHeadphonesAlt } from "react-icons/fa";
 
 function Home() {
   return (
@@ -14,7 +19,7 @@ function Home() {
         <div className="container">
           <div className="detail">
             <h2>The Best Smart Phone Collection 2024</h2>
-            <Link  className="link" to="/product">
+            <Link className="link" to="/product">
               Shop Now <BiRightArrowAlt />
             </Link>
           </div>
@@ -25,38 +30,78 @@ function Home() {
       </div>
       <div className="product_type">
         <div className="container">
-        <div className="box">
-          <div className="img_box">
-            <img src={phone} alt="phone" />
+          <div className="box">
+            <div className="img_box">
+              <img src={phone} alt="phone" />
+            </div>
+            <div className="detail">
+              <p>40 products</p>
+            </div>
           </div>
-          <div className="detail">
-            <p>40 products</p>
+          <div className="box">
+            <div className="img_box">
+              <img src={watch} alt="watch" />
+            </div>
+            <div className="detail">
+              <p>40 products</p>
+            </div>
+          </div>
+          <div className="box">
+            <div className="img_box">
+              <img src={headset} alt="headset" />
+            </div>
+            <div className="detail">
+              <p>40 products</p>
+            </div>
+          </div>
+          <div className="box">
+            <div className="img_box">
+              <img src={laptop} alt="laptop" />
+            </div>
+            <div className="detail">
+              <p>40 products</p>
+            </div>
           </div>
         </div>
-        <div className="box">
-          <div className="img_box">
-            <img src={watch} alt="watch" />
+      </div>
+      <div className="about">
+        <div className="container">
+          <div className="box">
+            <div className="icon">
+              <FiTruck />
+            </div>
+            <div className="detail">
+              <h3>Free Shipping</h3>
+              <p>Oder above ₹599 </p>
+            </div>
           </div>
-          <div className="detail">
-            <p>40 products</p>
+          <div className="box">
+            <div className="icon">
+              <FaRupeeSign />
+            </div>
+            <div className="detail">
+              <h3>Return & Refund</h3>
+              <p>Money Back Guaranty</p>
+            </div>
           </div>
-        </div>
-        <div className="box">
-          <div className="img_box">
-            <img src={headset} alt="headset" />
+          <div className="box">
+            <div className="icon">
+            <CiPercent />
+            </div>
+            <div className="detail">
+              <h3>Member Discount</h3>
+              <p>On every Order </p>
+            </div>
           </div>
-          <div className="detail">
-            <p>40 products</p>
+          <div className="box">
+            <div className="icon">
+            <FaHeadphonesAlt />
+            </div>
+            <div className="detail">
+              <h3>Customer Support</h3>
+              <p>24/7 Call Support</p>
+            </div>
           </div>
-        </div>
-        <div className="box">
-          <div className="img_box">
-            <img src={laptop} alt="laptop" />
-          </div>
-          <div className="detail">
-            <p>40 products</p>
-          </div>
-        </div>
         </div>
       </div>
     </>
