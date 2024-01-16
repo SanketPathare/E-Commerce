@@ -1,4 +1,4 @@
-import Home from "./Component/Home/Home"
+import Home from "./Component/Home/Home.jsx"
 import {Routes , Route} from "react-router-dom"
 const Router =()=>{
   return(

@@ -106,16 +106,26 @@ function Home() {
         </div>
       </div>
       <div className="product">
+        <h2>Top Products</h2>
         <div className="container">
-          {HomeProduct.map((product) => {
+          { 
+        
+          HomeProduct.map((product) => 
+          {
             return (
               <div className="box" key={product.id}>
                 <div className="img_box">
-                  <img src={product.Img} alt={product.Title} />
+                  <img src = {product.Img } alt={product.Title} />
                   <div className="icon">
-                    <IoCartOutline />
-                    <IoEyeOutline />
-                    <CiHeart />
+                    <li>
+                      <IoCartOutline />
+                    </li>
+                    <li>
+                      <IoEyeOutline />
+                    </li>
+                    <li>
+                      <CiHeart />
+                    </li>
                   </div>
                 </div>
                 <div className="detail">
