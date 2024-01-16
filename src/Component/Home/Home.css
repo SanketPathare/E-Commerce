@@ -161,6 +161,7 @@
   width: 250px;
   height: 200px;
   margin-right: 60px;
+
 }
 .product .container .box .img_box  .icon {
  z-index: 1;
@@ -174,6 +175,7 @@
 
 }
 .product .container .box .img_box:hover  .icon {
+  
   transform: translateX(-60px);
 }
 .product .container .box .img_box .icon li{
