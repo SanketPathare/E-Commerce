@@ -2,16 +2,14 @@ import { Link } from "react-router-dom";
 import "../Home/Home.css";
 import { BiRightArrowAlt } from "react-icons/bi";
 import home_img from "../../img/home2.png";
-import phone from "../../img/phone.png";
 import watch from "../../img/watch.png";
 import headset from "../../img/headsets.png";
-import laptop from "../../img/laptop.png";
 import { FiTruck } from "react-icons/fi";
-import { FaRupeeSign } from "react-icons/fa";
-import { CiPercent, CiHeart } from "react-icons/ci";
-import { FaHeadphonesAlt } from "react-icons/fa";
+import { FaRupeeSign , FaHeadphonesAlt } from "react-icons/fa";
+import { CiPercent } from "react-icons/ci";
 import HomeProduct from "../Home/HomeProduct";
-import { IoCartOutline, IoEyeOutline } from "react-icons/io5";
+import { LuHeart } from "react-icons/lu";
+import { MdOutlineShoppingCart ,  MdOutlineRemoveRedEye} from "react-icons/md";
 
 function Home() {
   return (
@@ -33,7 +31,7 @@ function Home() {
         <div className="container">
           <div className="box">
             <div className="img_box">
-              <img src={phone} alt="phone" />
+              <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/m/h/c/-original-imagtc3h9h6kpbkc.jpeg?q=70&crop=false" alt="phone" />
             </div>
             <div className="detail">
               <p>40 products</p>
@@ -57,12 +55,21 @@ function Home() {
           </div>
           <div className="box">
             <div className="img_box">
-              <img src={laptop} alt="laptop" />
+              <img src="https://m.media-amazon.com/images/I/71bDJ9wxxWL._SX679_.jpg" alt="laptop" />
             </div>
             <div className="detail">
               <p>40 products</p>
             </div>
           </div>
+          <div className="box">
+            <div className="img_box">
+              <img src="https://m.media-amazon.com/images/I/51E63+hTnvL._SY300_SX300_.jpg" alt="laptop" />
+            </div>
+            <div className="detail">
+              <p>40 products</p>
+            </div>
+          </div>
+          
         </div>
       </div>
       <div className="about">
@@ -108,28 +115,25 @@ function Home() {
       <div className="product">
         <h2>Top Products</h2>
         <div className="container">
-          { 
-        
-          HomeProduct.map((product) => 
-          {
+          {HomeProduct.map((product) => {
             return (
               <div className="box" key={product.id}>
                 <div className="img_box">
-                  <img src = {product.Img } alt={product.Title} />
-                  <div className="icon">
-                    <li>
-                      <IoCartOutline />
-                    </li>
-                    <li>
-                      <IoEyeOutline />
-                    </li>
-                    <li>
-                      <CiHeart />
-                    </li>
-                  </div>
+                  <img src={product.Img} alt={product.Title} />
                 </div>
                 <div className="detail">
                   <p>{product.cat}</p>
+                  <div className="icon">
+                    <li>
+                    <MdOutlineShoppingCart />
+                    </li>
+                    <li>
+                    <MdOutlineRemoveRedEye />
+                    </li>
+                    <li>
+                    <LuHeart />
+                    </li>
+                  </div>
                   <h3>{product.Title}</h3>
                   <h4>{product.price}</h4>
                 </div>
