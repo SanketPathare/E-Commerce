@@ -1,0 +1,58 @@
+.footer {
+    padding: 20px 30px;
+    width: 100%;
+    background: #131A22;
+    color: #fff;
+  }
+  .footer .container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .container .about {
+    max-width: 30%;
+  }
+  .footer .container .about .detail p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #828282;
+  }
+  .footer .container .about .detail .icon{
+    margin-top: 20px;
+    display: flex;
+  }
+  .footer .container .about .detail .icon li{
+    margin-left: 20px;
+    list-style: none;
+    padding: 10px 10px;
+    box-shadow: rgba(0, 0,0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .footer .container .about .detail .icon li:hover{
+    background:#f68585 ;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+.footer .container .account {
+    margin-right: 90%;
+    margin-top: 30px;
+}
+.footer .container .account h3 {
+    font-size: 32px;
+    color:#fff;
+}
+.footer .container .account ul{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.footer.container .account ul li {
+    margin-top: 5px;
+    color: #ffff;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.footer.container .account ul li:hover{
+    color: #f68585;
+}
