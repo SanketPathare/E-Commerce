@@ -1,7 +1,9 @@
 .top_banner {
   padding: 30px 40px;
   width: 100%;
-  background: #fee3f6;
+  background: rgba(251, 148, 58, 0.244);
+  
+
 }
 
 .top_banner .container {
@@ -32,7 +34,7 @@
 }
 
 .top_banner .container .detail .link:hover {
-  background: #f5b6d8;
+  background: rgb(232, 195, 127);
   color: #000;
 }
 
@@ -40,6 +42,7 @@
   width: 650px;
   width: 650px;
   object-fit: cover;
+  
 }
 
 .product_type {
@@ -62,7 +65,7 @@
   height: 200px;
   width: 200px;
   border-radius: 10%;
-  background: #fee3f6;
+  background: #faf2e3;
   overflow: hidden;
   cursor: pointer;
 }
@@ -108,7 +111,7 @@
 .about .container .box {
   padding: 10px 15px;
   display: flex;
-  background: #fee3f6;
+  background: rgba(251, 148, 58, 0.244);
   width: 270px;
 
   border-radius: 10px;
@@ -117,8 +120,8 @@
 
 .about .container .box .icon {
   color: #980240;
-  font-size: 32px;
-  margin-top: 20px;
+  font-size: 35px;
+ 
 }
 
 .product {
@@ -199,7 +202,7 @@
 }
 
 .icon li:hover {
-  background: #fee3f6;
+  background: rgba(252, 216, 151, 0.712);
   color: #000;
 }
 
@@ -227,13 +230,13 @@
 }
 .banner .container {
   padding: 30px 40px;
-  background: #fee3f6;
+  background: rgba(251, 148, 58, 0.244);
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
 }
 .banner .container .detail {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 20px;
 }
 .banner .container .detail h4 {
@@ -249,7 +252,7 @@
   color: #000;
 }
 .banner .container .detail p {
-  margin-top: 30px;
+  margin-top: 10px;
   color: #000;
   letter-spacing: 1.5px;
   font-weight: 600;
