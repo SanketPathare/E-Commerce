@@ -67,17 +67,6 @@ function Home() {
               <p>40 products</p>
             </div>
           </div>
-          <div className="box">
-            <div className="img_box">
-              <img
-                src="https://m.media-amazon.com/images/I/51E63+hTnvL._SY300_SX300_.jpg"
-                alt="laptop"
-              />
-            </div>
-            <div className="detail">
-              <p>40 products</p>
-            </div>
-          </div>
         </div>
       </div>
       <div className="about">
