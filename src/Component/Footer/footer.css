@@ -13,6 +13,8 @@
     max-width: 30%;
   }
   .footer .container .about .detail p {
+
+  text-align: start;
     margin-top: 20px;
     font-size: 16px;
     color: #828282;
