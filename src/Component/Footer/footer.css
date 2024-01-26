@@ -4,6 +4,7 @@
     background: #131A22;
     color: #fff;
   }
+
   .footer .container {
     max-width: 100%;
     display: flex;
@@ -87,4 +88,7 @@
 .footer .container .page ul li:hover{
   color: orange;
 }
+
+
+
 
