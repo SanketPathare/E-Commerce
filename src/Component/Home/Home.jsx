@@ -112,7 +112,8 @@ function Home() {
       <div className="product">
         <h2>Top Products</h2>
         <div className="container">
-          {HomeProduct.map((product) => {
+          {
+          HomeProduct.map((product) => {
             return (
               <div className="box" key={product.id}>
                 <div className="img_box">

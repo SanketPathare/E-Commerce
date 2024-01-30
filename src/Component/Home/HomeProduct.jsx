@@ -43,19 +43,20 @@ const HomeProduct = [
     Img: "https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/j/0/o/-original-imagtcfghamt7x4z.jpeg?q=70&crop=false",
   },
   {
-    id: 6,
+    id: 7,
     Title: "OnePlus Bullets Wireless Z2 Bluetooth Headset  (Acoustic Red, In the Ear)",
     cat: "Headphone",
     price: "₹1,499",
     Img: "https://rukminim2.flixcart.com/image/416/416/l4ei1e80/headphone/b/j/w/bullets-wireless-z2-oneplus-original-imagfaww7ga6nshz.jpeg?q=70&crop=false",
   },
   {
-    id: 6,
+    id: 8,
     Title: "SAMSUNG Odyssey Neo G7 32 inch Curved 4K Ultra HD VA Panel with Height Adjustable Stand, Quantum HDR 2000, 1000R Matte Display Gaming Monitor (LS32BG750NWXXL)  (AMD Free Sync, Response Time: 1 ms, 165 Hz Refresh Rate)",
     cat: "Earphone",
     price: "₹68,699",
     Img: "https://rukminim2.flixcart.com/image/416/416/xif0q/monitor/2/e/9/ls32bg750nwxxl-uhd-32-ls32bg750nwxxl-samsung-original-imaggfy4pnzbmgz8.jpeg?q=70&crop=false",
   },
+ 
 ];
 
 export default HomeProduct;
