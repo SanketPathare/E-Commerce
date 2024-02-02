@@ -18,6 +18,9 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
+.logo b{
+  color: orange;
+}
 .main_header {
   padding: 30px 40px;
   width: 100%;

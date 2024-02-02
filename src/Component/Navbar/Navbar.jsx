@@ -25,7 +25,7 @@ function Navbar() {
         <div className="container">
           <div className="logo">
             {/* <img src="/images/Logo.png" alt="" /> */}
-            ElectroMart
+            Electro<b>Mart</b>
           </div>
           <div className="search_box">
             <input
