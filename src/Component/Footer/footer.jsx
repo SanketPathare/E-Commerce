@@ -5,20 +5,41 @@ import "../Footer/footer.css";
 function footer() {
   return (
     <>
-      <div className="footer">
-        <div className="container">
-          <div className="about">
-            <div className="logo">
-              <h2>ElectroMart</h2>
-            </div>
-            <div className="detail">
-              <p>
-                Electromart is an online shopping platform that offers a wide
-                range of products from various categories
-              </p>
-              
-              <div className="icon">
-                <li>
+     <footer className="footer">
+     <div className="container">
+      <div className="row">
+        <div className="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">Phone</a></li>
+            <li><a href="#">SmartWatch</a></li>
+            <li><a href="#">Headphone</a></li>
+            <li><a href="#">Laptop</a></li>
+          </ul>
+        </div>
+        <div className="footer-col">
+          <h4>follow us</h4>
+          <div className="social-links">
+          <li>
                   <FaFacebook />
                 </li>
                 <li>
@@ -30,30 +51,11 @@ function footer() {
                 <li>
                 <FiYoutube />
                 </li>
-              </div>
-            </div>
-          </div>
-          <div className="account">
-            <h3>My Account</h3>
-            <ul>
-              <li>Account</li>
-              <li>Order</li>
-              <li>Cart</li>
-              <li>Shipping</li>
-              <li>Returns</li>
-            </ul>
-          </div>
-          <div className="page">
-            <h3>Pages</h3>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Terms & Condition</li>
-            </ul>
           </div>
         </div>
       </div>
+     </div>
+  </footer>
     </>
   );
 }

@@ -2,11 +2,7 @@ import { Link } from "react-router-dom";
 import "../Home/Home.css";
 import { BiRightArrowAlt } from "react-icons/bi";
 import home_img from "../../img/home2.png";
-import watch from "../../img/watch.png";
-import headset from "../../img/headsets.png";
-import { FiTruck } from "react-icons/fi";
-import { FaRupeeSign, FaHeadphonesAlt } from "react-icons/fa";
-import { CiPercent } from "react-icons/ci";
+import { FaRupeeSign } from "react-icons/fa";
 import HomeProduct from "../Home/HomeProduct";
 import { LuHeart } from "react-icons/lu";
 import { MdOutlineShoppingCart, MdOutlineRemoveRedEye } from "react-icons/md";
@@ -27,88 +23,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="product_type">
-        <div className="container">
-          <div className="box">
-            <div className="img_box">
-              <img
-                src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/m/h/c/-original-imagtc3h9h6kpbkc.jpeg?q=70&crop=false"
-                alt="phone"
-              />
-            </div>
-            <div className="detail">
-              <p>40 products</p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src={watch} alt="watch" />
-            </div>
-            <div className="detail">
-              <p>40 products</p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img src={headset} alt="headset" />
-            </div>
-            <div className="detail">
-              <p>40 products</p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <img
-                src="https://m.media-amazon.com/images/I/71bDJ9wxxWL._SX679_.jpg"
-                alt="laptop"
-              />
-            </div>
-            <div className="detail">
-              <p>40 products</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="about">
-        <div className="container">
-          <div className="box">
-            <div className="icon">
-              <FiTruck />
-            </div>
-            <div className="detail">
-              <h3>Free Shipping</h3>
-              <p>Oder above ₹599 </p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="icon">
-              <FaRupeeSign />
-            </div>
-            <div className="detail">
-              <h3>Return & Refund</h3>
-              <p>Money Back Guaranty</p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="icon">
-              <CiPercent />
-            </div>
-            <div className="detail">
-              <h3>Member Discount</h3>
-              <p>On every Order </p>
-            </div>
-          </div>
-          <div className="box">
-            <div className="icon">
-              <FaHeadphonesAlt />
-            </div>
-            <div className="detail">
-              <h3>Customer Support</h3>
-              <p>24/7 Call Support</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    
       <div className="product">
         <h2>Top Products</h2>
         <div className="container">
@@ -120,7 +35,9 @@ function Home() {
                   <img src={product.Img} alt={product.Title} />
                 </div>
                 <div className="detail">
-                  <p>{product.cat}</p>
+                  <p>{product.cat}</p> 
+                  <h3>{product.Title}</h3>
+                  <h4>{product.price}</h4>
                   <div className="icon">
                     <li>
                       <MdOutlineShoppingCart />
@@ -132,8 +49,6 @@ function Home() {
                       <LuHeart />
                     </li>
                   </div>
-                  <h3>{product.Title}</h3>
-                  <h4>{product.price}</h4>
                 </div>
               </div>
             );

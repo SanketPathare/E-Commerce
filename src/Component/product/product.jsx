@@ -1,8 +1,10 @@
-import Productdetail from "./productDetail"
+import ProductDetail from "./productDetail"
 import { LuHeart } from "react-icons/lu";
 import { MdOutlineShoppingCart, MdOutlineRemoveRedEye } from "react-icons/md";
 import "../product/product.css"
-const product = () => {
+// import { useState } from "react";
+const Product = () => {
+  // const [product,setProduct] = useState(ProductDetail)
   return (
    <>
    <div className="products">
@@ -11,6 +13,7 @@ const product = () => {
     <div className="container">
     <div className="filter">
     <div className="categories">
+      <h3>Categories</h3>
       <ul>
         <li>Phone</li>
         <li>SmartWatch</li>
@@ -22,7 +25,7 @@ const product = () => {
     <div className="productbox">
         <div className="content">
           {
-            Productdetail.map((product) => {
+          ProductDetail.map((product) => {
                 return (
                   <div className="box" key={product.id}>
                     <div className="img_box">
@@ -56,4 +59,4 @@ const product = () => {
   )
 }
 
-export default product
+export default Product

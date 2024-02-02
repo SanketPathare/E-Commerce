@@ -7,8 +7,10 @@ import { Link } from "react-router-dom";
 import { CiLogin } from "react-icons/ci";
 import { CiLogout } from "react-icons/ci";
 import { useAuth0 } from "@auth0/auth0-react";
+import { useState } from "react";
 
 function Navbar() {
+  const[search ,setSearch] = useState();
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
 
   return (
@@ -28,9 +30,10 @@ function Navbar() {
           <div className="search_box">
             <input
               type="text"
-              value=""
+              value={search}
               placeholder="Search Your Product..."
               autoComplete="off"
+              onChange={(e)=>{setSearch(e.target.value)}}
             ></input>
             <button>Search</button>
           </div>
