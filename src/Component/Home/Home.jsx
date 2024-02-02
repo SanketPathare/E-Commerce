@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import "../Home/Home.css";
 import { BiRightArrowAlt } from "react-icons/bi";
 import home_img from "../../img/home2.png";
-import { FaRupeeSign } from "react-icons/fa";
 import HomeProduct from "../Home/HomeProduct";
 import { LuHeart } from "react-icons/lu";
 import { MdOutlineShoppingCart, MdOutlineRemoveRedEye } from "react-icons/md";

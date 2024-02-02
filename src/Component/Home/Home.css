@@ -194,19 +194,16 @@
   font-size: 17px;
   color: orange;
   letter-spacing: 1px;
- margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .banner .container .detail h3 {
   margin-top: 10px;
   font-size: 24px;
   margin-right: 20%;
- 
   color: #000;
   margin-bottom: 40px;
 }
-
-
 
 .banner .container .detail .link {
   padding: 10px 30px;
@@ -239,11 +236,9 @@
     letter-spacing: 0.2px;
     margin-bottom: 20px;
     text-align: center;
-  
   }
   .banner .container .detail .link {
     font-size: 0.8rem;
-    
   }
   .banner .container .img_box img {
     width: 300px;
@@ -251,7 +246,4 @@
     height: auto;
     margin-bottom: 75px;
   }
-
-   
-
 }

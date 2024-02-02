@@ -1,10 +1,20 @@
 import ProductDetail from "./productDetail"
-import { LuHeart } from "react-icons/lu";
+import {  LuHeart } from "react-icons/lu";
 import { MdOutlineShoppingCart, MdOutlineRemoveRedEye } from "react-icons/md";
 import "../product/product.css"
-// import { useState } from "react";
+ import { useState } from "react";
 const Product = () => {
-  // const [product,setProduct] = useState(ProductDetail)
+  const [product,setProduct] = useState(ProductDetail)
+  const filtterProduct =(product)=>{
+    const update = ProductDetail.filter((x)=>{
+      return x.cat === product;
+    })
+    setProduct(update);
+  }
+  const AllProducts =()=>{
+    setProduct(ProductDetail);
+  }
+  
   return (
    <>
    <div className="products">
@@ -13,19 +23,20 @@ const Product = () => {
     <div className="container">
     <div className="filter">
     <div className="categories">
-      <h3>Categories</h3>
+      <h3>All Categories</h3>
       <ul>
-        <li>Phone</li>
-        <li>SmartWatch</li>
-        <li>Headphone</li>
-        <li>Laptop</li>
+        <li onClick={()=>AllProducts()}>All Products</li>
+        <li onClick={()=> filtterProduct("Phone")}>Phone</li>
+        <li onClick={()=> filtterProduct("Watch")} >SmartWatch</li>
+        <li onClick={()=> filtterProduct("Headphone")}>Headphone</li>
+        <li onClick={()=> filtterProduct("Laptop")}>Laptop</li>
         </ul>  
     </div>
     </div>
     <div className="productbox">
         <div className="content">
           {
-          ProductDetail.map((product) => {
+          product.map((product) => {
                 return (
                   <div className="box" key={product.id}>
                     <div className="img_box">
