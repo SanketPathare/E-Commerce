@@ -179,9 +179,8 @@
 }
 
 .banner .container {
-  padding: 30px 30px;
+  padding: 40px 50px;
   background: rgba(251, 148, 58, 0.244);
-  border-radius: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -192,27 +191,22 @@
 }
 
 .banner .container .detail h4 {
-  font-size: 18px;
+  font-size: 17px;
   color: orange;
   letter-spacing: 1px;
+ margin-bottom: 20px;
 }
 
 .banner .container .detail h3 {
   margin-top: 10px;
-  font-size: 42px;
+  font-size: 24px;
   margin-right: 20%;
-  letter-spacing: 1px;
+ 
   color: #000;
+  margin-bottom: 40px;
 }
 
-.banner .container .detail p {
-  margin-top: 10px;
-  color: #000;
-  letter-spacing: 1.5px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  font-size: 20px;
-}
+
 
 .banner .container .detail .link {
   padding: 10px 30px;
@@ -238,19 +232,26 @@
 @media (max-width: 800px) {
   .banner .container {
     display: block;
+    text-align: center;
   }
   .banner .container .detail h3 {
     display: inline-block;
     letter-spacing: 0.2px;
-    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+  
   }
   .banner .container .detail .link {
     font-size: 0.8rem;
+    
   }
   .banner .container .img_box img {
     width: 300px;
-    margin-left: 50px;
+
     height: auto;
     margin-bottom: 75px;
   }
+
+   
+
 }

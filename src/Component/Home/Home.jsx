@@ -59,18 +59,16 @@ function Home() {
         <div className="container">
           <div className="detail">
             <h4>LATEST TECHNOLOGY ADDED</h4>
-            <h3>Smart Watches Collection</h3>
-            <p>
-              <FaRupeeSign />
-              1299
-            </p>
+            <h3>
+Choose From a Wide Range, Available At Great Prices. ElectroMart Offers an Array Of Unique Products From Hundreds Of Brands.</h3>
+            
             <Link className="link" to="/product">
               Shop Now <BiRightArrowAlt />
             </Link>
           </div>
           <div className="img_box">
             <img
-              src="https://s.hdnux.com/photos/01/10/25/27/18961913/4/rawImage.jpg"
+              src="https://consumer-img.huawei.com/content/dam/huawei-cbg-site/other/in/mkt/pdp/wearables/watch-gt/img/Smart-Notification.png"
               alt="img"
             />
           </div>
