@@ -1,30 +1,23 @@
 import "./contact.css";
 
 function contact() {
-  return (
+  return ( 
     <div className="contact">
-
-      <div className="heading">
-        <h1>Contact</h1>
-      </div>
-      <div>
-        <form action="#">
-          <label value="name">Name:</label>
-          <br />
-          <input type="text" id="name" name="name" required />
-          <br />
-          <label value="email">Email:</label>
-          <br />
-          <input type="email" id="email" name="email" required />
-          <br />
-          <label value="message">Message:</label>
-          <br />
-          <textarea id="message" name="message" rows="6" cols="40"></textarea>
-          <br />
-          <input className="submit" type="submit" value="Submit" aria-required />
-        </form>
-      </div>
+    <div className="form-container">
+     <h1>
+        Send a Message to Us!
+     </h1>
+     <form>
+      <label>Name</label>
+     <input type="text" name="to_name" required/>
+     <label>Email</label>
+     <input type="email" name="from_email" required/>  
+     <label>Message</label>
+      <textarea name="message" required/>
+     <button className="btn" aria-required type="submit">Send</button>
+    </form>
     </div>
+  </div>
   );
 }
 
