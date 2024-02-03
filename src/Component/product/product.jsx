@@ -2,9 +2,9 @@ import ProductDetail from "./productDetail"
 import {  LuHeart } from "react-icons/lu";
 import { MdOutlineShoppingCart, MdOutlineRemoveRedEye } from "react-icons/md";
 import "../product/product.css"
- import { useState } from "react";
-const Product = () => {
-  const [product,setProduct] = useState(ProductDetail)
+
+const Product = ({product,setProduct}) => {
+ 
   const filtterProduct =(product)=>{
     const update = ProductDetail.filter((x)=>{
       return x.cat === product;
@@ -26,10 +26,10 @@ const Product = () => {
       <h3>All Categories</h3>
       <ul>
         <li onClick={()=>AllProducts()}>All Products</li>
-        <li onClick={()=> filtterProduct("Phone")}>Phone</li>
+        <li onClick={()=> filtterProduct("phone")}>Phone</li>
         <li onClick={()=> filtterProduct("Watch")} >SmartWatch</li>
-        <li onClick={()=> filtterProduct("Headphone")}>Headphone</li>
-        <li onClick={()=> filtterProduct("Laptop")}>Laptop</li>
+        <li onClick={()=> filtterProduct("headphone")}>Headphone</li>
+        <li onClick={()=> filtterProduct("laptop")}>Laptop</li>
         </ul>  
     </div>
     </div>

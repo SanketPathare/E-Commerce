@@ -60,16 +60,37 @@ const Productdetail =
       {
         id: 9,
         Title: "iQOO 12 5G (Legend, 12GB RAM, 256GB Storage) | India's 1st Snapdragon® 8 Gen 3 Mobile Platform | India's only Flagship with 50MP + 50MP + 64MP Camera",
-        cat: "Smartphone",
+        cat: "Phone",
         price: "₹53,699",
         Img: "https://m.media-amazon.com/images/I/411gvmvNQzL._SX300_SY300_QL70_FMwebp_.jpg",
       },
       {
         id: 10,
         Title: "iQOO Neo 7 5G (Frost Blue, 8GB RAM, 128GB Storage) | Dimensity 8200, only 4nm Processor in The Segment | 50% Charge in 10 mins | Motion Control & 90 FPS Gaming",
-        cat: "smartphone",
+        cat: "Phone",
         price: "₹53,699",
         Img: "https://m.media-amazon.com/images/I/61JS7lF2aqL._SX679_.jpg",
+      },
+      {
+        id: 11,
+        Title: "HP OMEN Gaming Laptop, Intel Core i7-14700HX (14th Gen), 8GB RTX 4060 GPU, 16.1-inch (40.9 cm), 140W, FHD, IPS, 165Hz, 300 nits, 16GB DDR5, 1TB SSD, RGB Backlit KB (MSO, Black, 2.32 kg), wf1025TX",
+        cat: "Laptop",
+        price: "₹1,58,000",
+        Img: "https://m.media-amazon.com/images/I/81bLEshn3OL._SX679_.jpg",
+      },
+      {
+        id: 12,
+        Title: "Noise Twist Round dial Smart Watch with Bluetooth Calling, 1.38 TFT Display, up-to 7 Days Battery, 100+ Watch Faces, IP68, Heart Rate Monitor, Sleep Tracking Jet Black",
+        cat: "Phone",
+        price: "₹1,699",
+        Img: "https://m.media-amazon.com/images/I/61TapeOXotL._SX679_.jpg",
+      },
+      {
+        id: 13,
+        Title: "Noise Two Wireless On-Ear Headphones with 50 Hours Playtime, Low Latency(up to 40ms), 4 Play Modes, Dual Pairing, BT v5.3 (Bold Black)",
+        cat: "Headphone",
+        price: "₹3,699",
+        Img: "https://m.media-amazon.com/images/I/512sO2L0k6L._SX679_.jpg",
       },
       
 ]

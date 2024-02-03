@@ -9,8 +9,8 @@ import { CiLogout } from "react-icons/ci";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useState } from "react";
 
-function Navbar() {
-  const[search ,setSearch] = useState();
+function Navbar({ searchbtn }) {
+  const [search, setSearch] = useState();
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
 
   return (
@@ -33,15 +33,15 @@ function Navbar() {
               value={search}
               placeholder="Search Your Product..."
               autoComplete="off"
-              onChange={(e)=>{setSearch(e.target.value)}}
+              onChange={(e) => {
+                setSearch(e.target.value);
+              }}
             ></input>
-            <button>Search</button>
+            <button onClick={() => searchbtn(search)}>Search</button>
           </div>
           <div className="icon">
-            {
-              isAuthenticated &&
-              (
-                <div className="account">
+            {isAuthenticated && (
+              <div className="account">
                 <div className="user_icon">
                   <FaRegUser />
                 </div>
@@ -50,9 +50,8 @@ function Navbar() {
                   Hello, {user.name}
                 </p>
               </div>
-              )
-            }
-           
+            )}
+
             <div className="second_icon">
               <Link to="/" className="link">
                 <IoHeartOutline />
@@ -94,20 +93,17 @@ function Navbar() {
           <div className="auth">
             {isAuthenticated ? (
               <button>
-                <CiLogout 
+                <CiLogout
                   onClick={() =>
                     logout({
                       logoutParams: { returnTo: window.location.origin },
                     })
                   }
-                  
                 />
-                               
               </button>
             ) : (
               <button>
-              <CiLogin onClick={() => loginWithRedirect()} Login />
-                
+                <CiLogin onClick={() => loginWithRedirect()} Login />
               </button>
             )}
           </div>
